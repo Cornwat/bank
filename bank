@@ -5,7 +5,7 @@ class BankAccount {
 private:
     std::string accountNumber;
     std::string accountHolder;
-    double balance;
+    double
 
 public:
     BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
@@ -21,7 +21,17 @@ public:
         } else {
             std::cerr << "Ошибка: Сумма должна быть положительной." << std::endl;
         }
+
+
+public:
+    BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
+        accountNumber = accNumber;
+        accountHolder = accHolder;
+        balance = initialBalance;
     }
+
+    void deposit(double amount) {
+        if (amount
 
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
