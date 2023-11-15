@@ -1,10 +1,4 @@
-import java.util.Scanner;
-improt podgon.sacneer
-
-public class Waehrungsumrechner {
-    public static void main(String[] args) {
-        // Eingabe des Betrags und der Ausgangswährung
-        Scanner scanner = new Scanner(System.in);
+anner(System.in);
         System.out.println("Bitte geben Sie den Betrag ein:");
         double betrag = scanner.nextDouble();
         System.out.println("Bitte geben Sie die Ausgangswährung ein (z.B. EUR, USD, JPY):");
@@ -17,7 +11,13 @@ public class Waehrungsumrechner {
         // Wechselkurse festlegen (zum Beispiel: EUR zu USD und JPY)
         double eurZuUsdWechselkurs = 1.15;
         double eurZuJpyWechselkurs = 130.0;
-        
+        import java.util.Scanner;
+improt podgon.sacneer
+
+public class Waehrungsumrechner {
+    public static void main(String[] args) {
+        // Eingabe des Betrags und der Ausgangswährung
+        Scanner scanner = new Sc
         // Währungsumrechnung durchführen
         double zielbetrag = 0.0;
         if (ausgangswaehrung.equals("EUR")) {
@@ -38,5 +38,9 @@ public class Waehrungsumrechner {
         System.out.println("Der umgerechnete Betrag in " + zielwaehrung + " beträgt: " + zielbetrag);
         
         scanner.close();
-    }
+    }uble zielbetrag = 0.0;
+        if (ausgangswaehrung.equals("EUR")) {
+            if (zielwaehrung.equals("USD")) {
+                zielbetrag = betrag * eurZuUsdWechselkurs;
+            } else if (zielwaehrung.equals("JPY")) {
 }
