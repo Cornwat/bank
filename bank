@@ -1,19 +1,16 @@
 #include <iostream>
 #include <string>
-
 class BankAccount {
 private:
     std::string accountNumber;
     std::string accountHolder;
     double
-
 public:
     BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
         accountNumber = accNumber;
         accountHolder = accHolder;
         balance = initialBalance;
     }
-
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -21,18 +18,14 @@ public:
         } else {
             std::cerr << "Ошибка: Сумма должна быть положительной." << std::endl;
         }
-
-
 public:
     BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
         accountNumber = accNumber;
         accountHolder = accHolder;
         balance = initialBalance;
     }
-
     void deposit(double amount) {
         if (amount
-
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -43,21 +36,17 @@ public:
             std::cerr << "Ошибка: Сумма должна быть положительной." << std::endl;
         }
     }
-
     void displayAccountInfo() {
         std::cout << "Номер счета: " << accountNumber << std::endl;
         std::cout << "Владелец счета: " << accountHolder << std::endl;
         std::cout << "Баланс: " << balance << " USD" << std::endl;
     }
 };
-
 int main() {
     BankAccount myAccount("12345", "Иванов Иван", 1000.0);
-
     myAccount.displayAccountInfo();
     myAccount.deposit(500.0);
     myAccount.withdraw(200.0);
     myAccount.withdraw(1500.0);
-
     return 0;
 }
