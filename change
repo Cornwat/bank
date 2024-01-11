@@ -32,15 +32,6 @@ public class Waehrungsumrechner {
         } else {
             System.out.println("Ungültige Ausgangswährung");
             return;
-        }
-        
+                
         // Ausgabe des umgerechneten Betrags
-        System.out.println("Der umgerechnete Betrag in " + zielwaehrung + " beträgt: " + zielbetrag);
-        
-        scanner.close();
-    }uble zielbetrag = 0.0;
-        if (ausgangswaehrung.equals("EUR")) {
-            if (zielwaehrung.equals("USD")) {
-                zielbetrag = betrag * eurZuUsdWechselkurs;
-            } else if (zielwaehrung.equals("JPY")) {
-}
+        System.out.println("De
