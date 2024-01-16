@@ -14,24 +14,3 @@ anner(System.in);
         import java.util.Scanner;
 improt podgon.sacneer
 
-public class Waehrungsumrechner {
-    public static void main(String[] args) {
-        // Eingabe des Betrags und der Ausgangswährung
-        Scanner scanner = new Sc
-        // Währungsumrechnung durchführen
-        double zielbetrag = 0.0;
-        if (ausgangswaehrung.equals("EUR")) {
-            if (zielwaehrung.equals("USD")) {
-                zielbetrag = betrag * eurZuUsdWechselkurs;
-            } else if (zielwaehrung.equals("JPY")) {
-                zielbetrag = betrag * eurZuJpyWechselkurs;
-            } else {
-                System.out.println("Ungültige Zielwährung");
-                return;
-            }
-        } else {
-            System.out.println("Ungültige Ausgangswährung");
-            return;
-                
-        // Ausgabe des umgerechneten Betrags
-        System.out.println("De
