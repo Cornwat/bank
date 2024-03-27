@@ -7,16 +7,7 @@ private:
     double
 public:
     BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
-        accountNumber = accNumber;
-        accountHolder = accHolder;
-        balance = initialBalance;
-    }
-    void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-            std::cout << "Внесено " << amount << " USD. Новый баланс: " << balance << " USD" << std::endl;
-        } else {
-            std::cerr << "Ошибка: Сумма должна быть положительной." << std::endl;
+        acть положительной." << std::endl;
         }
 public:
     BankAccount(const std::string& accNumber, const std::string& accHolder, double initialBalance) {
